@@ -1,0 +1,24 @@
+.black-bg {
+    background-color: #000 ;
+    color: #cfcfcf;
+}
+
+.gray-bg {
+    background-color: #272727;
+    color: #cfcfcf;
+}
+
+
+.main__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+

@@ -1,0 +1,48 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100vw;
+    height: 8rem;
+    color: #cfcfcf;
+    position: fixed;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+}
+
+li {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
+    transition: border 0.2s ease-in-out;
+    position: relative;
+
+}
+
+li::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #cfcfcf;
+    transition: all 0.2s ease;
+}
+
+li:hover {
+    color: var(--white);
+}
+
+li:hover::before {
+    width: 100%;
+    color: var(--white);
+}
+
