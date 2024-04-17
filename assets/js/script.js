@@ -1,60 +1,32 @@
 //SCROLL REVEAL
-
 window.sr = ScrollReveal({reset: true})
 
-ScrollReveal().reveal('.sobremim-img-content', { 
+ScrollReveal().reveal('.img-content', { 
     rotate: { x: 0, y: 20, z:0},
-    delay: 200
+    delay: 100
 });
 
-ScrollReveal().reveal('.sobremim-text-content', { 
+ScrollReveal().reveal('.text-content', { 
     rotate: { x: 0, y: 20, z:0},
-    delay: 400
+    delay: 300
 });
 
-
-//AJAX
-
-document.addEventListener('DOMContentLoaded', () => {
-    const mystoryButton = document.getElementById('mystory');
-    if (mystoryButton) {
-        mystoryButton.click();
+//JQUERY
+$(document).ready(function() {
+    function showContentAndSelectButton(btnId, contentId) {
+        $('.content').hide();
+        $(contentId).show();
+        $('.selected').removeClass('selected');
+        $(btnId).addClass('selected');      
     }
+
+    $('#mystory').click(function() {
+        showContentAndSelectButton('#mystory', '#mystory-content')
+    })
+
+    $('#softskills').click(function() {
+        showContentAndSelectButton('#softskills', '#softskills-content')
+    })
+
+    showContentAndSelectButton('#mystory', '#mystory-content');
 });
-
-document.addEventListener('click', e => {
-    const el = e.target;
-    const classList = el.classList;
-
-    if (classList.contains('sobremim-button')) {
-        e.preventDefault();
-        loadPage(el);
-    }
-})
-
-getHref = (el) => {
-    if (el.id === 'mystory') {
-        return 'mystory.html';
-    }
-
-    if (el.id === 'softskills') {
-        return 'softskills.html';
-    }
-
-    return;
-}
-
-loadPage = (el) => {
-
-    const href = getHref(el);
-    
-    fetch(href)
-    .then(res => res.text())
-    .then(htmlContent => loadResult(htmlContent))
-    .catch(e => console.warn(e));
-}
-
-loadResult = (htmlContent) => {
-    const result = document.getElementById('result');
-    result.innerHTML = htmlContent;
-}

@@ -69,7 +69,7 @@ a {
     width: 20rem;
 }
 
-.text-content .buttons button {
+.text-content .buttons .sobremim-button {
     background-color: transparent;
     color: #c3c3c3;
     border: 1px solid #c3c3c3;
@@ -84,8 +84,24 @@ a {
     }
 }
 
-#result {
-    min-height: 20rem;
+.content {
+    display: none;
+    height: 30rem;
+}
+
+.text-content .buttons .sobremim-button.selected {
+    background-color: #c3c3c3;
+    color: #000;
+    border: 1px solid #000;
+    padding: 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+
+    &:hover {
+        color: #000;
+        border: 1px solid #000;
+        transform: scale(1.05);
+    }
 }
 
 .sobremim-img-content {
