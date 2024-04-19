@@ -26,7 +26,7 @@ h1 {
 
 h2 {
     color: var(--white);
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
 }
 
@@ -69,6 +69,10 @@ a {
     width: 20rem;
 }
 
+.sobremim-content {
+    min-height: 40rem;
+}
+
 .text-content .buttons .sobremim-button {
     background-color: transparent;
     color: #c3c3c3;
@@ -82,11 +86,6 @@ a {
         border: 1px solid var(--white);
         transform: scale(1.05);
     }
-}
-
-.content {
-    display: none;
-    height: 30rem;
 }
 
 .text-content .buttons .sobremim-button.selected {
@@ -114,10 +113,11 @@ a {
     position: relative;
     background-color: #000;
     height: 32rem;
-    width: 25rem;
+    width: 25.5rem;
     left: 23rem;
-    bottom: 2rem;
+    bottom: 2.5rem;
     transform: scale(1.5);
+    border-radius: 10px;
 }
 
 .sobremim-img {
@@ -125,5 +125,84 @@ a {
     width: 25rem;
     transform: scale(1.5);
     z-index: 1;
+    border-radius: 10px;
 }
+
+
+/* CONHECIMENTOS */
+
+.conhecimentos-content {
+    width: 80%;
+    height: 70%;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--light-gray);
+}
+
+.grid-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.technology-description {
+    background-color: #272727;
+    margin-left: 8rem;
+    padding: 3rem;
+    max-width: 50rem;
+    border-radius: 40px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+}
+
+.base-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    height: 19rem;
+    width: 19rem;
+    background-color: #272727;
+    color: var(--white);
+    border-radius: 40px;
+    transition: all 0.5s ease;
+}
+
+.box {
+    justify-content: center;
+}
+
+.mongodb-box {
+    justify-content: flex-end;
+}
+
+.logo {
+    height: 80%;
+}
+
+.nodejs-logo {
+    width: 90%;
+}
+
+.mongodb-logo {
+    height: 30%;
+    margin-bottom: 4rem;
+}
+.box:hover, .mongodb-box:hover {
+    transform: scale(1.1);
+}
+
 

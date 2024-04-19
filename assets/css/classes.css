@@ -1,15 +1,14 @@
 .black-bg {
-    background-color: #000 ;
-    color: #cfcfcf;
+    background-color: var(--black) ;
+    color: var(--light-gray);
 }
 
 .gray-bg {
-    background-color: #272727;
-    color: #cfcfcf;
+    background-color: #1d1d1d;
+    color: var(--light-gray);
 }
 
-
-.main__container {
+.center-aligned {
     display: flex;
     align-items: center;
     justify-content: center;
