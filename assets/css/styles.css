@@ -66,11 +66,17 @@ a {
 .text-content .buttons {
     display: flex;
     justify-content: space-between;
-    width: 20rem;
+    width: 30rem;
 }
 
 .sobremim-content {
     min-height: 40rem;
+}
+
+.sobremim-content ul li {
+    font-size: 20px;
+    margin: 1rem 0;
+    list-style-type: none;
 }
 
 .text-content .buttons .sobremim-button {
@@ -203,6 +209,7 @@ a {
 }
 .box:hover, .mongodb-box:hover {
     transform: scale(1.1);
+    background-color: #585858;
 }
 
 
