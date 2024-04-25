@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 h1 {
@@ -28,6 +28,10 @@ h2 {
     color: var(--white);
     font-size: 60px;
     font-weight: bold;
+}
+
+h3 {
+    font-size: 40px;
 }
 
 p {
@@ -63,7 +67,7 @@ a {
 }
 
 /* SOBRE MIM */
-.text-content .buttons {
+.buttons {
     display: flex;
     justify-content: space-between;
     width: 30rem;
@@ -78,8 +82,7 @@ a {
     margin: 1rem 0;
     list-style-type: none;
 }
-
-.text-content .buttons .sobremim-button {
+.buttons .sobremim-button {
     background-color: transparent;
     color: #c3c3c3;
     border: 1px solid #c3c3c3;
@@ -114,6 +117,7 @@ a {
     right: 20rem;
 }
 
+
 .block {
     display: block;
     position: relative;
@@ -139,7 +143,6 @@ a {
 
 .conhecimentos-content {
     width: 80%;
-    height: 70%;
 }
 
 .title::before {
@@ -167,10 +170,14 @@ a {
     border-radius: 40px;
 }
 
-.grid {
+.grid-conhecimentos {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 3rem;
+}
+
+.title-conhecimentos {
+    margin-bottom: 10rem;
 }
 
 .base-box {
@@ -212,4 +219,52 @@ a {
     background-color: #585858;
 }
 
+/* PROJETOS */
 
+.projetos-content {
+    width: 70%;
+    margin-top: 10rem;
+}
+
+.projetos-list {
+    margin-top: 10rem;
+}
+
+.box-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.title-projetos {
+    margin: 3rem 0;
+}
+
+.projeto-box {
+    background-color: #3a3a3a;
+    height: 35rem;
+    width: 70%;
+    border-radius: 70px;
+    padding: 4rem;
+    margin: 3rem 0;
+}
+
+.projeto-box-content {
+    display: flex;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.projeto-img {
+    width: 25rem;
+    height: 20rem;
+    border-radius: 20px;
+}
+
+.projeto-info {
+    padding: 0.5rem 0;
+
+    & p {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+}

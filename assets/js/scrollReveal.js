@@ -20,3 +20,8 @@ ScrollReveal().reveal('.grid-container', {
     rotate: { x: 0, y: 20, z:0},
     delay: 200
 }) 
+
+ScrollReveal().reveal('.projeto-box', {
+    rotate: { x: 0, y: 20, z:0},
+    delay: 100
+}) 
