@@ -1,0 +1,367 @@
+@media (max-width: 1500px) {
+
+    /* HOME */
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 50px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .menu nav ul {
+        width: 60%;
+    }
+
+    .main__content {
+        gap: 0rem;
+    }
+
+
+    /* SOBRE MIM */
+
+    .sobremim-content::-webkit-scrollbar {
+        width: 8px;
+      }
+
+
+    .sobremim-content::-webkit-scrollbar-track {
+      background: #c3c3c3; 
+    }
+
+    .sobremim-content::-webkit-scrollbar-thumb {
+      background: #000; 
+    }
+
+    .block {
+        height: 25rem;
+        width: 20rem;
+        left: 17.5rem;
+    }
+
+    .sobremim-img {
+        height: 25rem;
+        width: 20rem;
+    }
+
+
+    /*CONHECIMENTOS*/
+    #conhecimentos {
+        display: flex;
+        justify-content: center;
+        padding: 10rem 0;
+    }
+
+    .title-conhecimentos {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .projetos-list {
+        margin-top: 5rem;
+    }
+
+    .title::before {
+        width: 0;
+    }
+
+    .technology-description {
+        max-width: 50%;
+        margin: 0;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #conhecimentos {
+        min-height: 120vh;
+    }
+
+    .grid-conhecimentos {
+        margin-bottom: 10rem
+    }
+
+
+    /*PROJETOS*/
+
+    .title-projetos {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .projeto-box {
+        width: 100%;
+        border-radius: 70px;
+        padding: 4rem;
+        margin: 2rem 0;
+    }
+}
+
+
+@media (max-width: 1000px) {
+
+    /* INICIO */
+    #inicio .main__content {
+        flex-direction:column-reverse;
+    }
+
+    .main__content .img-content .home-img {
+        transform: scale(0.6);
+    }
+
+    .img-content {
+        height: 25rem;
+    }
+
+    .description-content {
+        max-width: 30rem;
+    }
+
+    .description {
+        text-align: center;
+    }
+
+    .description-content div {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .text-content {
+        align-items: center;
+    }
+
+    .technology-description {
+        max-width: 70%;
+    }
+
+    .grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grid-conhecimentos {
+        margin-bottom: 10rem
+    }
+
+    .base-box {
+        height: 15rem;
+        width: 15rem;
+    }
+
+    .mongodb-logo {
+        margin-bottom: 2rem;
+    }
+
+
+    /*PROJETOS*/
+
+    .projeto-box {
+        width: 100%;
+        border-radius: 70px;
+        padding: 4rem;
+        margin: 2rem 0;
+    }
+
+    .projeto-info p {
+        font-size: 17px;
+    }
+    
+
+}
+
+@media (max-width: 900px) {
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 45px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    #sobre-mim .main__content {
+        flex-direction:column;
+        justify-content: center;
+        margin-top: 5rem;
+        gap: 5rem;
+    }
+
+    .block {
+        display: none;
+    }
+
+    .sobremim-img {
+        height: 20rem;
+        width: 16rem;
+    }
+
+    .sobremim-img-content {
+        right: 0;
+    }
+
+    .grid-conhecimentos {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+
+    .projeto-box {
+        border-radius: 70px;
+        padding: 4rem;
+    }
+
+    .projeto-box-content {
+        flex-direction: column;
+    }
+
+    .projeto-img {
+        width: 20rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .menu nav ul {
+        width: 90%;
+    }
+
+    a {
+        font-size: 16px;
+    }
+    
+    .conhecimentos-content {
+        width: 90%;
+    }
+
+    .text-content {
+        max-width: 40rem;
+    }
+
+    .grid-conhecimentos {
+        gap: 1rem;
+    }
+
+    .mongodb-logo {
+        margin-bottom: 1rem;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .menu {
+        display: none;
+        height: 100%;
+        z-index: 2;
+      }
+
+    #menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+    }
+    
+    .hamburger {
+        display: block;
+        position: fixed;
+        z-index: 3;
+        top: 10px;
+        right: 10px;
+        font-size: 24px;
+        background-color: transparent;
+        color: var(--white);
+        border: none;
+
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    h3 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    #conhecimentos {
+        min-height: 100vh ;
+        padding: 5rem 0;
+    }
+
+    .title-conhecimentos {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 5rem;
+    }
+
+    .title::before {
+        width: 0;
+    }
+
+    .sobremim-content {
+        max-width: 30rem;
+        max-height: 30rem;
+        margin-bottom: 5rem;
+    }
+
+    .sobremim-img {
+        height: 15rem;
+        width: 12rem;
+    }
+    
+    .base-box {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 8px;
+    }
+
+    .box:hover, .mongodb-box:hover {
+        transform: none;
+        background-color: #585858;
+    }
+
+    .mongodb-logo {
+        margin-bottom: 0;
+    }
+
+    .technology-description {
+        max-width: 90%;
+        border-radius: 8px;
+    }
+
+    .grid-conhecimentos {
+        margin-bottom: 5rem
+    }
+
+    .projetos-content {
+        width: 90%;
+        margin-top: 5rem;
+    }
+
+    .projeto-box {
+        border-radius: 8px;
+        margin: 1rem 0;
+    }
+
+    .projeto-img__container {
+        margin: 0 auto;
+    }
+    
+}

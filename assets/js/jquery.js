@@ -30,36 +30,63 @@ $('.base-box').on('mouseenter', function() {
     let targetElement = null 
     switch (elementId) {
         case 'html':
-            targetElement = '.html-knowledge'
-            break
+            targetElement = '.html-knowledge';
+            break;
         case 'css':
-            targetElement = '.css-knowledge'
-            break
+            targetElement = '.css-knowledge';
+            break;
         case 'javascript':
-            targetElement = '.javascript-knowledge'
-            break
+            targetElement = '.javascript-knowledge';
+            break;
         case 'nodejs':
-            targetElement = '.nodejs-knowledge'
-            break
+            targetElement = '.nodejs-knowledge';
+            break;
         case 'mysql':
-            targetElement = '.mysql-knowledge'
-            break
+            targetElement = '.mysql-knowledge';
+            break;
         case 'mongodb':
-            targetElement = '.mongodb-knowledge'
-            break
+            targetElement = '.mongodb-knowledge';
+            break;
         case 'git':
-            targetElement = '.git-knowledge'
-            break
+            targetElement = '.git-knowledge';
+            break;
         case 'github':
-            targetElement = '.github-knowledge'
-            break
+            targetElement = '.github-knowledge';
+            break;
         default:
-            targetElement = null
+            targetElement = null;
     }
 
     if (targetElement) $(targetElement).fadeIn();
-})
+});
 
 $('.base-box').on('mouseleave',function() {
     $('.technology-description').stop(true, true).fadeOut();
-})
+});
+
+//menu hamburuger
+$('.hamburger').on('click', function() {
+    
+    if ($('#hamburger-checkbox').prop('checked')) {
+        $('#hamburger-checkbox').prop('checked', false)
+        $('.menu').css('display', 'none')
+    } else {
+        $('#hamburger-checkbox').prop('checked', true)
+        $('.menu').css('display', 'flex')            
+    }
+});
+
+function esconderMenu() {
+    $('#hamburger-checkbox').prop('checked', false);
+    $('.menu').css('display', 'none');
+}
+
+$(window).resize(function() {
+    if ($(window).width() <= 800) {
+        $('#menu-list li a').on('click', function() {
+            esconderMenu();
+        });
+    } else {
+        $('#menu-list li a').off('click');
+    }
+}).resize();

@@ -25,3 +25,11 @@ ScrollReveal().reveal('.projeto-box', {
     rotate: { x: 0, y: 20, z:0},
     delay: 100
 }) 
+
+
+const screenWidth = window.innerWidth;
+
+if (screenWidth < 800) {
+    ScrollReveal().destroy();
+  }
+  

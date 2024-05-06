@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 }
 
@@ -16,6 +17,7 @@ body {
 
 section {
     min-height: 100vh;
+    overflow-x: none;
 }
 
 h1 {
@@ -60,6 +62,7 @@ a {
 }
 
 /* INICIO */
+
 .main__content .text-content {
     display: flex;
     flex-direction: column;
@@ -77,7 +80,7 @@ a {
     align-items: center;
 }
 
-.main__content .img-content .circle {
+.main__content .img-content .home-img {
     border-radius: 50%;
 }
 
@@ -122,7 +125,9 @@ a {
 }
 
 .sobremim-content {
-    min-height: 40rem;
+    height: 40rem;
+    overflow-y: auto;
+
 }
 
 .sobremim-content ul li {
@@ -175,8 +180,12 @@ a {
 
 /* CONHECIMENTOS */
 
+#conhecimentos {
+    padding: 10rem;
+}
+
 .conhecimentos-content {
-    width: 80%;
+    width: 100%;
 }
 
 .title::before {
@@ -191,16 +200,13 @@ a {
 
 .grid-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
 }
 
 .technology-description {
     background-color: #272727;
-    margin-left: 8rem;
+    margin: auto;
     padding: 3rem;
-    max-width: 50rem;
+    max-width: 30%;
     border-radius: 40px;
 }
 
@@ -248,6 +254,7 @@ a {
     height: 30%;
     margin-bottom: 4rem;
 }
+
 .box:hover, .mongodb-box:hover {
     transform: scale(1.1);
     background-color: #585858;
@@ -275,7 +282,6 @@ a {
 
 .projeto-box {
     background-color: #3a3a3a;
-    height: 40rem;
     width: 70%;
     border-radius: 70px;
     padding: 4rem;

@@ -13,23 +13,31 @@
     <link rel="stylesheet" href="./assets/css/classes.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/css/menu.css">
+    <link rel="stylesheet" href="./assets/css/mediaqueries.css">
 
 </head>
 <body>
-    <aside class="menu">
-            <nav>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mim">Sobre mim</a></li>
-                <li><a href="#conhecimentos">Conhecimentos</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-            </nav>
-    </aside>
+
+    <button class="hamburger">&#9776;</button>
+    <input id="hamburger-checkbox" style="display: none;" type="checkbox">
+
+    <header id="menu" class="menu">
+        <nav>
+          <ul id="menu-list">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#conhecimentos">Conhecimentos</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+      </header>
+      
 
     <section class="center-aligned black-bg" id="inicio">
         <div class="main__content">
             <div class="text-content">
                 <h1>Olá, eu sou o<br> João Pedro! </h1>
-                <div>
+                <div class="description-content">
                     <p class="description">Sou um desenvolvedor web, me conheça melhor a partir deste portifólio.</p>
                     <div>
                         <button class="home-button" id="cv-download">Baixar currículo</button>
@@ -38,7 +46,7 @@
                 </div>
             </div>
             <div class="img-content">
-                <img class="circle" src="./assets/img/inicio.png" alt="foto de perfil">
+                <img class="home-img" src="./assets/img/inicio.png" alt="foto de perfil">
             </div>
         </div>
     </section>
@@ -85,7 +93,7 @@
         </div>
     </section>
 
-    <section id="conhecimentos" class="center-aligned black-bg">
+    <section id="conhecimentos" class="black-bg">
         <div class="conhecimentos-content">
             <div class="title title-conhecimentos">
                 <h2>Conhecimentos</h1>
@@ -110,7 +118,7 @@
                 </div>
                 <div class="javascript-knowledge technology-description">
                     <p>Tenho conhecimento das funcionalidades do JavaScript, incluindo conceitos como orientação a objetos, webpack, polimorfismo e requisições assíncronas com AJAX (utilizando tanto o fetch quanto o axios).</p><br>
-                    <p>Além disso, também sei como manipular elemtos do DOM, seja utilizando Javascript puro, seja utilizando a biblioteca JQuery para simplificar o processo.</p>
+                    <p>Além disso, também sei como manipular elemtos do DOM, seja utilizando Javascript puro, seja utilizando a biblioteca jQuery para simplificar o processo.</p>
                 </div>
                 <div class="nodejs-knowledge technology-description">
                     <p>Tenho conhecimento básico em NodeJS e já utilizei o framework Express, onde aprendi a utilizar a arquitetura MVC(Model-View-Controller) para estruturar melhor meu projeto</p><br>
@@ -141,7 +149,7 @@
                 <div class="projeto-box">
                     <h3>Gerador de senhas aleatórias</h3>
                     <div class="projeto-box-content">
-                        <div>
+                        <div class="projeto-img__container">
                             <img class="projeto-img" src="/assets/img/gerador-de-senha.png" alt="preview do projeto">
                         </div>
                         <div class="projeto-info">
@@ -157,7 +165,7 @@
                     <div class="projeto-box">
                         <h3>Validação de formulário</h3>
                         <div class="projeto-box-content">
-                            <div>
+                            <div class="projeto-img__container">
                                 <img class="projeto-img" src="/assets/img/valida-formulario.png" alt="preview do projeto">
                             </div>
                             <div class="projeto-info">
@@ -174,7 +182,7 @@
                 <div class="projeto-box">
                     <h3>Gerador de CPFs válidos</h3>
                     <div class="projeto-box-content">
-                        <div>
+                        <div class="projeto-img__container">
                             <img class="projeto-img" src="/assets/img/gerador-de-cpf.png" alt="preview do projeto">
                         </div>
                         <div class="projeto-info">
@@ -190,7 +198,7 @@
                     <div class="projeto-box">
                         <h3>Cadastro de pessoas</h3>
                         <div class="projeto-box-content">
-                            <div class="projeto-info">
+                            <div class="projeto-img__container">
                                 <img class="projeto-img" src="/assets/img/cadastro.png" alt="preview do projeto">
                             </div>
                             <div class="projeto-info"> 

@@ -10,20 +10,30 @@
     z-index: 1;
 }
 
+.hamburger {
+    display: none;
+}
+
 nav {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.menu nav ul {
+    display: flex;
+    justify-content: space-between;
     width: 40%;
 }
 
-.menu li {
+.menu nav ul li {
     font-size: 2rem;
     font-weight: bold;
     padding: 1rem;
     transition: border 0.2s ease-in-out;
     position: relative;
-
+    list-style-type: none;
 }
 
 .menu li::before {
