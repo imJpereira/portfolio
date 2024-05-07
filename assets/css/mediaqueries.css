@@ -101,7 +101,8 @@
         width: 100%;
         border-radius: 70px;
         padding: 4rem;
-        margin: 2rem 0;
+        margin-bottom: 2rem;
+
     }
 }
 
@@ -167,7 +168,6 @@
         width: 100%;
         border-radius: 70px;
         padding: 4rem;
-        margin: 2rem 0;
     }
 
     .projeto-info p {
@@ -357,11 +357,21 @@
 
     .projeto-box {
         border-radius: 8px;
-        margin: 1rem 0;
+        margin-bottom: 1rem;
     }
 
     .projeto-img__container {
         margin: 0 auto;
+    }
+
+    footer h2 {
+        font-size: 15px;
+    }
+
+    footer li,
+    footer p,
+    footer a {
+        font-size: 10px;
     }
     
 }

@@ -285,7 +285,7 @@ a {
     width: 70%;
     border-radius: 70px;
     padding: 4rem;
-    margin: 3rem 0;
+    margin-bottom: 5rem;
 }
 
 .projeto-box-content {
@@ -307,4 +307,39 @@ a {
         font-size: 20px;
         margin-bottom: 2rem;
     }
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+footer h2 {
+    font-size: 20px;
+    margin-bottom: 1rem;
+    color: var(--light-gray);
+
+}
+
+footer li,
+footer p,
+footer a {
+    font-size: 15px;
+    list-style-type: none;
+    color: var(--light-gray);
+}
+
+footer li {
+    margin-bottom: 1rem;
+}
+
+.footer-content {
+    display: flex;
+    gap: 10rem;
+    padding: 5rem;
 }
