@@ -55,5 +55,3 @@ document.getElementById('cadastro-github').addEventListener( 'click', () => {
     const url = 'https://github.com/imJpereira/cadastro'
     window.open(url)
 });
-
-//MENU HAMBURGER

@@ -64,7 +64,7 @@ $('.base-box').on('mouseleave',function() {
     $('.technology-description').stop(true, true).fadeOut();
 });
 
-//menu hamburuger
+//MENU HAMBURGUER
 $('.hamburger').on('click', function() {
     
     if ($('#hamburger-checkbox').prop('checked')) {
